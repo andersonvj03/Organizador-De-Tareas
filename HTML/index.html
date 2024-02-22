@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Tareas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/main.css" as="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <h1>Organizador De Tareas</h1>
+        </header>
+        <main class="main">
+            <form action="">
+                <h2>Registro De Tareas</h2>
+                    <div class="registro">
+                        <label for="name">Materia</label>
+                        <input type="text" placeholder="Ingrese el nombre de la materia..." id="name" required>
+                    </div>
+                    <div class="registro">
+                        <label for="date">Fecha</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="registro">
+                        <label for="time">Hora</label>
+                        <input type="time" id="time" required>
+                    </div>
+                    <div class="registro">
+                        <label for="tipo">Tipo</label>
+                        <input list="tipo" id="tipoTarea" required>
+                        <datalist id="tipo">
+                            <option value="Parcial"></option>
+                            <option value="Laboratorio"></option>
+                            <option value="Actividad en Linea"></option>
+                            <option value="Proyecto"></option>
+                            <option value="Investigación"></option>
+                            <option value="Foro"></option>
+                        </datalist>
+                    </div>
+                    <div class="boton">
+                        <input type="submit" value="Registrar Tarea" id="btn" >
+                    </div>
+            </form>
+          
+        </main>
+        <div id="resultado">
+            <h2>Lista de Tareas</h2>
+        </div>
+    </div>
+  
+  <script src="../JS/app.js"></script> 
+</body>
+</html>

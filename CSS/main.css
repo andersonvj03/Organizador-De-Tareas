@@ -1,0 +1,138 @@
+:root{
+    --primario:  #4223d7 ;
+--secundario: #311ab7 ;
+--color3: #211198 ;
+--color4: #100978 ;
+--fondo: #000059 ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--primario);
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*Header*/
+.header{
+     width: 100%;
+     height: 100%;
+    color: white;
+    background-color: #000059;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+.header h1{
+    font-size: 4rem;
+    
+}
+
+@media (max-width: 768px){
+    .header{
+        margin: auto;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+}
+/*Main*/
+.main{
+    width: 50rem;
+    height: 50rem;
+    
+}
+.main form{
+    background-color: white;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+.main form h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.registro{
+    margin: 2rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.registro label{
+    font-size: 1.6rem;
+}
+.registro input{
+    line-height: 2.5rem;
+    padding: .5rem;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+.boton input{
+    padding: .5rem;
+    line-height: 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+@media (max-width:768px){
+    .main{
+        max-width: 35rem;
+    }
+    .registro input{
+        width: 100%;
+    }
+}
+/*Resultado*/
+#resultado{
+    width: 120rem;
+    height: auto;
+    background-color: var(--color4);
+    font-size: 1.6rem;
+    color: var(--primario);
+    margin: 2rem;
+    display: flex;
+    margin-top: 7rem;
+    border-radius: .5rem;
+    flex-wrap: wrap;
+    
+}
+#resultado h2{
+    font-size: 3rem;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 2rem;
+}
+.tarjeta{
+    background-color: aliceblue;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    
+}
+@media (max-width:768px){
+    #resultado{
+        max-width: 35rem;
+        justify-content: center;
+    }
+}
